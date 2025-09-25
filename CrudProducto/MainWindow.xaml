@@ -1,0 +1,42 @@
+﻿<Window x:Class="CrudProducto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudProducto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Botón para ir a W2 -->
+        <Button Content="Ir a W2"
+                Width="120"
+                Height="30"
+                HorizontalAlignment="Left"
+                Margin="0 0 0 10"/>
+
+        <!-- DataGrid -->
+        <DataGrid x:Name="dgProductos"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding IdProducto}" Width="60"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding NombreProducto}" Width="200"/>
+                <DataGridTextColumn Header="Proveedor" Binding="{Binding IdProveedor}" Width="80"/>
+                <DataGridTextColumn Header="Categoría" Binding="{Binding CategoriaProducto}" Width="150"/>
+                <DataGridTextColumn Header="Cantidad por Unidad" Binding="{Binding CantidadPorUnidad}" Width="150"/>
+                <DataGridTextColumn Header="Precio" Binding="{Binding PrecioUnidad}" Width="100"/>
+                <DataGridTextColumn Header="Existencia" Binding="{Binding UnidadesEnExistencia}" Width="100"/>
+                <DataGridTextColumn Header="Pedido" Binding="{Binding UnidadesEnPedido}" Width="100"/>
+                <DataGridTextColumn Header="Nivel Pedido" Binding="{Binding NivelNuevoPedido}" Width="100"/>
+                <DataGridTextColumn Header="Suspendido" Binding="{Binding Suspendido}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
