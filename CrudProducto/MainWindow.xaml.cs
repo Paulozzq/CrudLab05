@@ -12,9 +12,9 @@ using System.Windows.Shapes;
 
 namespace CrudProducto
 {
-    public readonly ProductoService? _productoService;
     public partial class MainWindow : Window
     {
+        public readonly ProductoService? _productoService;
         public MainWindow()
         {
             InitializeComponent();
