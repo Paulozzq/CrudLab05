@@ -28,6 +28,7 @@ namespace Application.Services
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.InnerException?.Message ?? ex.Message);
                 throw new ApplicationException("Error al obtener los productos", ex);
             }
         }

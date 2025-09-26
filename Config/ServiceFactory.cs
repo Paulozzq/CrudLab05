@@ -16,5 +16,11 @@ namespace Config
             IProductoRepository productoRepository = new ProductoRepositoryImlp();
             return new ProductoService(productoRepository);
         }
+
+        public static ClienteService CreateClienteService()
+        {
+            IClienteRepository clienteRepository = new ClienteRepositoryImpl();
+            return new ClienteService(clienteRepository);
+        }
     }
 }

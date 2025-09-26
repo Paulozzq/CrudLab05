@@ -12,12 +12,7 @@ namespace Infraestructure.RepositoriesImpl
 {
     public class ProductoRepositoryImlp : IProductoRepository
     {
-        public Task<IEnumerable<Producto>> GetAllProductos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<IEnumerable<Producto>> GetAllProductosAsync()
+        public async Task<IEnumerable<Producto>> GetAllProductos()
         {
             var productos = new List<Producto>();
             using (var connection = DbConnectionFactory.CreateConnection())
@@ -38,7 +33,7 @@ namespace Infraestructure.RepositoriesImpl
                                 IdProducto = reader.GetInt32(reader.GetOrdinal("IdProducto")),
                                 NombreProducto = reader.GetString(reader.GetOrdinal("NombreProducto")),
                                 IdProveedor = reader.GetInt32(reader.GetOrdinal("IdProveedor")),
-                                IdCategoria = reader.GetInt32(reader.GetOrdinal("IdCategoria")),
+                                IdCategoria = reader.GetInt32(reader.GetOrdinal("idCategoria")),
                                 CantidadPorUnidad = reader.GetString(reader.GetOrdinal("CantidadPorUnidad")),
                                 PrecioUnidad = reader.GetDecimal(reader.GetOrdinal("PrecioUnidad")),
                                 UnidadesEnExistencia = reader.GetInt16(reader.GetOrdinal("UnidadesEnExistencia")),

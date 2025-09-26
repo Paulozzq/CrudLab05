@@ -12,7 +12,7 @@ namespace Infraestructure.Data
     public class DbConnectionFactory
     {
         private static readonly string _connectionString =
-            "Server=localhost\\SQLEXPRESS;Database=Neptuno;User Id=PauloDev;Password=12345678;TrustServerCertificate=True;";
+            "Server=LAB1502-004\\SQLEXPRESS;Database=Neptuno;User Id=UserHugo;Password=12345678;TrustServerCertificate=True;";
 
         public static DbConnection CreateConnection()
         {

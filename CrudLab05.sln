@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{9D4244AA-75F1-4505-AADE-B68D8B6A2CD4}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Config\Config.csproj", "{990B4FED-7B5C-4709-91DB-2315054AFB10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudProducto", "CrudProducto\CrudProducto.csproj", "{0B8411FA-E6DC-4354-865C-736FE7068E5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudClientes", "CrudClientes\CrudClientes.csproj", "{C341788E-6FCE-4D71-88E1-007A8B3A3809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0B8411FA-E6DC-4354-865C-736FE7068E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B8411FA-E6DC-4354-865C-736FE7068E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B8411FA-E6DC-4354-865C-736FE7068E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C341788E-6FCE-4D71-88E1-007A8B3A3809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C341788E-6FCE-4D71-88E1-007A8B3A3809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C341788E-6FCE-4D71-88E1-007A8B3A3809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C341788E-6FCE-4D71-88E1-007A8B3A3809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

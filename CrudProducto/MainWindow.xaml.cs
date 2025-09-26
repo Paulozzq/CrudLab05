@@ -1,4 +1,5 @@
 ﻿using Application.Services;
+using Config;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,6 +19,17 @@ namespace CrudProducto
         public MainWindow()
         {
             InitializeComponent();
+            _productoService = ServiceFactory.CreateProductoService();
+            LoadProductos();
+        }
+        private async void LoadProductos()
+        {
+            dgProductos.ItemsSource = null;
+            if (_productoService == null)
+                return;
+            var productos = await _productoService.GetProductosAsync();
+            dgProductos.ItemsSource = productos;
+
         }
     }
 }

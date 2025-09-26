@@ -29,7 +29,7 @@
                 <DataGridTextColumn Header="ID" Binding="{Binding IdProducto}" Width="60"/>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding NombreProducto}" Width="200"/>
                 <DataGridTextColumn Header="Proveedor" Binding="{Binding IdProveedor}" Width="80"/>
-                <DataGridTextColumn Header="Categoría" Binding="{Binding CategoriaProducto}" Width="150"/>
+                <DataGridTextColumn Header="Categoría" Binding="{Binding IdCategoria}" Width="150"/>
                 <DataGridTextColumn Header="Cantidad por Unidad" Binding="{Binding CantidadPorUnidad}" Width="150"/>
                 <DataGridTextColumn Header="Precio" Binding="{Binding PrecioUnidad}" Width="100"/>
                 <DataGridTextColumn Header="Existencia" Binding="{Binding UnidadesEnExistencia}" Width="100"/>
